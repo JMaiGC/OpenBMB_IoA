@@ -1,8 +1,6 @@
 Integrate Third-party Agent
 ################################
 
-|
-
 Here is a brief guide for integrating third-party agents. If you want to integrate an agent from a third-party repository, there are mainly two things to consider:
 
 
@@ -27,7 +25,7 @@ Open Interpreter Integration
   
   * The Open Interpreter, located in the :code:`im_client/agents/open_interpreter/open_interpreter_agent.py` script, will be dockerized. This script includes FastAPI POST endpoints, which will be exposed as an HTTP service when started with Uvicorn. When deployed with Docker, these endpoints can be accessed externally.
 
-* **Creating Docker for Open Interpreter**: 
+* **Creating Dockerfile for Open Interpreter**: 
   
   * Next, create a Dockerfile in the :code:`dockerfiles/tool_agents` directory. This Dockerfile ensures that tool agents like Open Interpreter can be started with Docker, preventing potential environment conflicts with IoA.
 
@@ -61,7 +59,7 @@ Open Interpreter Docker Startup
 
       docker build -f dockerfiles/tool_agents/open_interpreter.Dockerfile -t open_interpreter:latest .
   
-  * Then, start the server and multiple communication agents by running:
+  * Then, start the server and communication agents by running:
   
     .. code-block:: bash
 

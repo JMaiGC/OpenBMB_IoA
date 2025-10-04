@@ -47,7 +47,7 @@ For more details, please refer to [our paper](https://arxiv.org/abs/2407.07061).
 
 ## 🚀 Quick Start
 
-Get IoA up and running in just a few steps:
+Get IoA up and running in just a few steps: 
 
 ### 1. 📋 Prerequisites
 - Ensure you have [Docker](https://www.docker.com/) installed on your system.
